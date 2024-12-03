@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tr/static/css/main.e280ba4d.css",
+    "main.js": "/tr/static/js/main.ef2dd5d8.js",
+    "static/js/453.7c239e98.chunk.js": "/tr/static/js/453.7c239e98.chunk.js",
+    "static/media/gunshotSFX.mp3": "/tr/static/media/gunshotSFX.465e5c11f04e3a450e40.mp3",
+    "static/media/emptyChamberSFX.mp3": "/tr/static/media/emptyChamberSFX.bb72e6c9d31bdfd3a6d6.mp3",
+    "index.html": "/tr/index.html",
+    "main.e280ba4d.css.map": "/tr/static/css/main.e280ba4d.css.map",
+    "main.ef2dd5d8.js.map": "/tr/static/js/main.ef2dd5d8.js.map",
+    "453.7c239e98.chunk.js.map": "/tr/static/js/453.7c239e98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e280ba4d.css",
+    "static/js/main.ef2dd5d8.js"
+  ]
+}
