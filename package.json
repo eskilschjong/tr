@@ -2,7 +2,7 @@
   "name": "trail",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://eskilschjong.github.io/tr",
+  "homepage": "https://eskilschjong.github.io/tr",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
