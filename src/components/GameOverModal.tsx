@@ -10,7 +10,7 @@ interface GameOverModalProps {
 
 const GameOverModal: React.FC<GameOverModalProps> = ({ show, onRestart, onClose, chamber }) => {
     return (
-        <Modal show={show} onHide={onClose} centered className="modal-dark-brown">
+        <Modal show={show} onHide={onClose} centered className="modal-dark-red">
             <Modal.Header closeButton>
             </Modal.Header>
             <Modal.Body className="text-center">

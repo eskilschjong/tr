@@ -13,14 +13,30 @@ code {
 }
 
 .modal-dark-brown .modal-content{
-  background-color: #661e1c; /* Dark brown */
-  color: rgb(255, 219, 219); /* Optional: Adjust text color for contrast */
+  background-color: rgb(255, 215, 177);
+  color: rgb(71, 46, 29);
 }
 
 .modal-dark-brown .modal-content .btn-outline-dark{
-  background-color: #661e1c; /* Dark brown */
-  border-color: rgb(255, 219, 219); /* Optional: Adjust border color for contrast */
-  color: rgb(255, 219, 219); /* Optional: Adjust text color for contrast */
+  background-color: rgb(255, 215, 177);
+  border-color: rgb(71, 46, 29);
+  color: rgb(71, 46, 29);
+}
+
+.modal-dark-brown .modal-header,
+.modal-dark-brown .modal-footer {
+  border-color: rgb(71, 46, 29);
+}
+
+.modal-dark-red .modal-content{
+  background-color: #661e1c;
+  color: rgb(255, 219, 219);
+}
+
+.modal-dark-red .modal-content .btn-outline-dark{
+  background-color: #661e1c;
+  border-color: rgb(255, 219, 219);
+  color: rgb(255, 219, 219);
 }
 
 
@@ -85,6 +101,54 @@ code {
   margin-bottom: 15vw;
 }
 
+.last-chamber {
+  color: white;
+  font-size: 10vw;
+  border: 1vw solid #fff;
+  box-shadow:
+    0 0 0.5px #fff,
+    0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 4px #0f0,
+    0 0 8px #0f0,
+    0 0 10px #0f0,
+    0 0 12px #0f0,
+    0 0 15px #0f0;
+  color: #fff;
+  text-shadow:
+    0 0 3px #fff,
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #0f0,
+    0 0 40px #0f0,
+    0 0 50px #0f0,
+    0 0 60px #0f0,
+    0 0 75px #0f0;
+  border-radius: 2vw;
+  padding: 2vw;
+  margin-bottom: 15vw;
+}
+
+
+.settings-button, .restart-button {
+  position: fixed;
+  z-index: 1000; 
+  background: none;
+  color: rgb(255, 215, 177);
+  border: none;
+  font-size: 2rem;
+}
+
+.settings-button {
+  top: 10px;
+  right: 10px;
+}
+
+.restart-button {
+  top: 10px;
+  left: 10px;
+}
+
 .trigger-container {
   height: 60vw;
   margin-bottom: 10vw;
@@ -119,11 +183,12 @@ code {
   }
 }
 
-.chamber {
+.chambers {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  width: 100%;
+  flex-wrap: wrap;
+  width: 80vw;
   height: 100%;
   color: gold;
   font-size: 10VW;
@@ -189,8 +254,9 @@ code {
     }
   }
 
-  .chamber {
+  .chambers {
     font-size: 10vh;
+    width: 80vh;
   }
 
   .bullet {
