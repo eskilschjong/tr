@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Circle, CircleFill, ArrowCounterclockwise, GearFill } from 'react-bootstrap-icons';
+import { ArrowCounterclockwise, GearFill } from 'react-bootstrap-icons';
 import GameOverModal from './GameOverModal';
 import SettingsModal from './SettingsModal';
 
