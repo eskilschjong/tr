@@ -4,6 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 interface Settings {
   chambers: number;
   gameMode: string;
+  partyMode: boolean;
 }
 
 interface SettingsModalProps {
@@ -49,6 +50,17 @@ const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, onSave, show, cu
               <option value="standard">Standard</option>
               <option value="lastChamber">Last Chamber</option>
             </select>
+          </label>
+        </div>
+        <div style={{ marginTop: '1em' }}>
+          <label>
+            Party Time?:
+            <input 
+              type="checkbox" 
+              className="form-check-input mt-2" 
+              checked={settings.partyMode} 
+              onChange={(e) => setSettings({ ...settings, partyMode: e.target.checked })}
+            />
           </label>
         </div>
       </Modal.Body>

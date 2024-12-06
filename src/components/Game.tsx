@@ -6,12 +6,14 @@ import SettingsModal from './SettingsModal';
 interface Settings {
   chambers: number;
   gameMode: string;
+  partyMode: boolean;
 }
 
 const Game: React.FC = () => {
   const getInitialSettings = (): Settings => ({
     chambers: Number(localStorage.getItem('Chambers') || 6),
     gameMode: localStorage.getItem('GameMode') || 'standard',
+    partyMode: localStorage.getItem('PartyMode') === 'false',
   });
 
   const [chamber, setChamber] = useState<number>(Number(localStorage.getItem('Chamber') || 0));
@@ -29,6 +31,7 @@ const Game: React.FC = () => {
     localStorage.setItem('Alive', alive.toString());
     localStorage.setItem('Chambers', settings.chambers.toString());
     localStorage.setItem('GameMode', settings.gameMode);
+    localStorage.setItem('PartyMode', settings.partyMode.toString());
   }, [chamber, bulletInChamber, alive, settings]);
 
   const newGame = (newSettings: Settings = settings) => {
